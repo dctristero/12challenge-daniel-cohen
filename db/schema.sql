@@ -17,11 +17,11 @@ CREATE TABLE subjects (
    id INT NOT NULL AUTO_INCREMENT PRIMARY KEY,
    first_name VARCHAR(30),
    last_name VARCHAR(30),
-   debt DECIMAL,
+   debt INT,
    class_id INT,
    FOREIGN KEY (class_id)
    REFERENCES classes(id),
-   fiefdom_name INT,
+   fiefdom_id INT,
    FOREIGN KEY (fiefdom_id)
    REFERENCES fiefdoms(id),
    vassal_id INT,
